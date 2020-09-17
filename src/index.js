@@ -4,9 +4,17 @@ import { render } from 'react-dom';
 
 
 // Create a react component
+
 const App = () => {
+    const style = { backgroundColor: 'blue', color: 'white' };
+    const buttonText = 'Click Me!'
     return (
-        <h1>Hello From React</h1>
+        <div>
+            <label className="label" htmlFor="name">Enter name: </label>
+            <input type="text" id="name" />
+            <button style={style}>{buttonText}</button>
+        </div>
+
     );
 };
 
